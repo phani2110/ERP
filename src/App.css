@@ -1,38 +1,70 @@
-.App {
+/* Dashboard.css */
+
+/* Common styles */
+.dashboard-container {
+  padding: 40px;
+}
+
+.dashboard-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.dashboard-metrics {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.metric {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.metric img {
+  width: 50px;
+  height: 50px;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dashboard-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-actions button:hover {
+  background-color: #eee;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (min-width: 768px) {
+  .dashboard-content {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dashboard-metrics {
+    justify-content: flex-start;
+  }
+
+  .metric {
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 }

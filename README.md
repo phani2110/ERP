@@ -26,3 +26,20 @@ To install the ERP Frontend Application, follow these steps:
   
  `git clone <repository-url>`
 
+* Navigate to the project directory:
+
+ `cd erp-frontend`
+
+* Install dependencies using npm:
+
+`npm install`
+
+>## Usage
+
+To run the ERP Frontend Application, follow these steps:
+* Start the development server:
+  `npm start`
+* Once the development server is up and running, open your web browser and navigate to `http://localhost:3000`.
+* You will be presented with the login page. If you're a new user, you can sign up for an account. If you already have an account, you can log in using your credentials.
+* Explore the application and use the intuitive interface to manage different aspects of your business operations.
+

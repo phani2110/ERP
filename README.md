@@ -47,6 +47,8 @@ To run the ERP Frontend Application, follow these steps:
 >## Order Management
 ![dashboard](https://github.com/phani2110/ERP/assets/112878767/8eedeb79-5104-461c-a25c-e7cfdab22cb6)
 >## Product Management
+![product management](https://github.com/phani2110/ERP/assets/112878767/d65934d9-74e1-42ab-87b1-72cb3fbf3a1c)
+
 
 
 

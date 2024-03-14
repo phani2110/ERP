@@ -4,5 +4,8 @@ Welcome to the Front-End Application README! This document will guide you throug
 
 >## Table of Contents
 
-*Introduction
-*
+* Introduction
+* Prerequisites
+* Installation
+* Usage
+  

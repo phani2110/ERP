@@ -1,6 +1,5 @@
 ># Front-End Application README
-
-Welcome to the Front-End Application README! This document will guide you through the process of setting up, running, and using our front-end application.
+Welcome to the ERP Frontend Application README! This document will guide you through the process of setting up, running, and using our ERP (Enterprise Resource Planning) Frontend Application.
 
 >## Table of Contents
 
@@ -10,5 +9,5 @@ Welcome to the Front-End Application README! This document will guide you throug
 * Usage
 
 >## Introduction
-Our front-end application is designed to provide a user-friendly interface for interacting with our system. It offers various features tailored to enhance user experience and streamline interaction with the underlying functionalities.
+Our ERP Frontend Application is designed to provide an intuitive user interface for managing various aspects of business operations including but not limited to inventory management, sales tracking, human resources, and financial management. This README aims to help you get started with using the application.
   

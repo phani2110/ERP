@@ -37,32 +37,30 @@ const OrderManagement = () => {
   };
 
   return (
-    <div>
-      <ul>
-        {orders.map(order => (
-          <li key={order.id} class="oc">
-            <div>Order ID: {order.id}</div>
-            <div>Customer Name: {order.customerName}</div>
-            <div>Order Date: {order.orderDate}</div>
-            <div>Status: {order.status}</div>
-            <button onClick={() => viewOrderDetails(order)} id='vd'>View Details</button>
-            <button onClick={() => setShowStatusDropdown(true)} id='us'>Update Status</button>
-            {showStatusDropdown && (
-              <div>
-                <select onChange={(e) => setNewStatus(e.target.value)}>
-                  <option value="">Select Status</option>
-                  <option value="Packed">Packed</option>
-                  <option value="Shipped">Shipped</option>
-                  <option value="Delivered">Delivered</option>
-                  <option value="Canceled">Canceled</option>
-                </select>
-                <button onClick={() => updateOrderStatus(order.id)} id='s'>Save</button>
-              </div>
-            )}
-            <button onClick={() => deleteOrder(order.id)} id='d'>Delete</button>
-          </li>
-        ))}
-      </ul>
+    <div className="order-management-container">
+      {orders.map(order => (
+        <div key={order.id} className="order-card">
+          <div>Order ID: {order.id}</div>
+          <div>Customer Name: {order.customerName}</div>
+          <div>Order Date: {order.orderDate}</div>
+          <div>Status: {order.status}</div>
+          <button onClick={() => viewOrderDetails(order)} className="action-button">View Details</button>
+          <button onClick={() => setShowStatusDropdown(true)} className="action-button">Update Status</button>
+          {showStatusDropdown && (
+            <div className="status-dropdown">
+              <select onChange={(e) => setNewStatus(e.target.value)}>
+                <option value="">Select Status</option>
+                <option value="Packed">Packed</option>
+                <option value="Shipped">Shipped</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Canceled">Canceled</option>
+              </select>
+              <button onClick={() => updateOrderStatus(order.id)} className="action-button">Save</button>
+            </div>
+          )}
+          <button onClick={() => deleteOrder(order.id)} className="action-button">Delete</button>
+        </div>
+      ))}
 
       {/* Modal to display order details */}
       <div className="modal" style={{ display: selectedOrder ? 'block' : 'none' }}>
@@ -84,4 +82,3 @@ const OrderManagement = () => {
 };
 
 export default OrderManagement;
-

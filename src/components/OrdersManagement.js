@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../App.css';
+import '../om.css';
+
 const OrderManagement = () => {
   // Mock order data
   const initialOrders = [
@@ -16,6 +17,7 @@ const OrderManagement = () => {
 
   // Function to view order details
   const viewOrderDetails = (order) => {
+    console.log('Selected order:', order); // Check selected order
     setSelectedOrder(order);
   };
 
@@ -38,13 +40,13 @@ const OrderManagement = () => {
     <div>
       <ul>
         {orders.map(order => (
-          <li key={order.id}>
+          <li key={order.id} class="oc">
             <div>Order ID: {order.id}</div>
             <div>Customer Name: {order.customerName}</div>
             <div>Order Date: {order.orderDate}</div>
             <div>Status: {order.status}</div>
-            <button onClick={() => viewOrderDetails(order)}>View Details</button>
-            <button onClick={() => setShowStatusDropdown(true)}>Update Status</button>
+            <button onClick={() => viewOrderDetails(order)} id='vd'>View Details</button>
+            <button onClick={() => setShowStatusDropdown(true)} id='us'>Update Status</button>
             {showStatusDropdown && (
               <div>
                 <select onChange={(e) => setNewStatus(e.target.value)}>
@@ -54,29 +56,32 @@ const OrderManagement = () => {
                   <option value="Delivered">Delivered</option>
                   <option value="Canceled">Canceled</option>
                 </select>
-                <button onClick={() => updateOrderStatus(order.id)}>Save</button>
+                <button onClick={() => updateOrderStatus(order.id)} id='s'>Save</button>
               </div>
             )}
-            <button onClick={() => deleteOrder(order.id)}>Delete</button>
+            <button onClick={() => deleteOrder(order.id)} id='d'>Delete</button>
           </li>
         ))}
       </ul>
 
       {/* Modal to display order details */}
-      {selectedOrder && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={() => setSelectedOrder(null)}>&times;</span>
-            <h2>Order Details</h2>
-            <p>Order ID: {selectedOrder.id}</p>
-            <p>Customer Name: {selectedOrder.customerName}</p>
-            <p>Order Date: {selectedOrder.orderDate}</p>
-            <p>Status: {selectedOrder.status}</p>
-          </div>
+      <div className="modal" style={{ display: selectedOrder ? 'block' : 'none' }}>
+        <div className="modal-content">
+          <span className="close" onClick={() => setSelectedOrder(null)}>&times;</span>
+          <h2>Order Details</h2>
+          {selectedOrder && (
+            <div>
+              <p>Order ID: {selectedOrder.id}</p>
+              <p>Customer Name: {selectedOrder.customerName}</p>
+              <p>Order Date: {selectedOrder.orderDate}</p>
+              <p>Status: {selectedOrder.status}</p>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 };
 
 export default OrderManagement;
+

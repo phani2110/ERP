@@ -1,7 +1,8 @@
 // Dashboard.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css'; // Import Dashboard CSS file
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../dashboard.css'; // Import Dashboard CSS file
 /*import icon1 from '../assets/icon1.svg';
 import icon2 from '../assets/icon2.svg';*/
 
@@ -15,12 +16,12 @@ const Dashboard = () => {
       <div className="dashboard-content">
         <div className="dashboard-metrics">
           <div className="metric">
-            <h3>Total Products</h3>
+          <i className="bi bi-boxes"></i><h3>Total Products</h3>
             <p>100</p>
           </div>
           <div className="metric">
-            
-            <h3>Total Orders</h3>
+
+          <i className="bi bi-cart"></i><h3>Total Orders</h3>
             <p>50</p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ERP/static/css/main.e413808a.css",
-    "main.js": "/ERP/static/js/main.c862cac3.js",
+    "main.css": "/ERP/static/css/main.91293912.css",
+    "main.js": "/ERP/static/js/main.680b19df.js",
     "static/js/453.ace7afac.chunk.js": "/ERP/static/js/453.ace7afac.chunk.js",
     "static/media/ocal.jpg": "/ERP/static/media/ocal.610ad13b0f23dd7ea838.jpg",
     "static/media/pm.jpeg": "/ERP/static/media/pm.ed0f7234c4068b70b2a0.jpeg",
@@ -10,12 +10,12 @@
     "static/media/bootstrap-icons.woff2?": "/ERP/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/om.jpg": "/ERP/static/media/om.289769f573f0a398b49b.jpg",
     "index.html": "/ERP/index.html",
-    "main.e413808a.css.map": "/ERP/static/css/main.e413808a.css.map",
-    "main.c862cac3.js.map": "/ERP/static/js/main.c862cac3.js.map",
+    "main.91293912.css.map": "/ERP/static/css/main.91293912.css.map",
+    "main.680b19df.js.map": "/ERP/static/js/main.680b19df.js.map",
     "453.ace7afac.chunk.js.map": "/ERP/static/js/453.ace7afac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e413808a.css",
-    "static/js/main.c862cac3.js"
+    "static/css/main.91293912.css",
+    "static/js/main.680b19df.js"
   ]
 }

@@ -10,4 +10,11 @@ Welcome to the ERP Frontend Application README! This document will guide you thr
 
 >## Introduction
 Our ERP Frontend Application is designed to provide an intuitive user interface for managing various aspects of business operations including but not limited to inventory management, sales tracking, human resources, and financial management. This README aims to help you get started with using the application.
-  
+
+>## Prerequisites
+Before you begin, ensure you have met the following prerequisites:
+
+* Node.js and npm (Node Package Manager)
+* Basic commands like cd, mkdir, npm, and git will be useful.
+* Bootstrap packages.
+* A modern web browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.

@@ -18,3 +18,9 @@ Before you begin, ensure you have met the following prerequisites:
 * Basic commands like cd, mkdir, npm, and git will be useful.
 * Bootstrap packages.
 * A modern web browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.
+
+>## Installation
+
+To install the ERP Frontend Application, follow these steps:
+* Clone the repository to your local machine using Git:
+  `git clone <repository-url>`

@@ -44,6 +44,9 @@ To run the ERP Frontend Application, follow these steps:
 * Explore the application and use the intuitive interface to manage different aspects of your business operations.
 >## Landing Page
 ![dashvoardmain](https://github.com/phani2110/ERP/assets/112878767/7754a433-6236-49f6-be21-e6d03db55edc)
->## Order Mangement
+>## Order Management
+![dashboard](https://github.com/phani2110/ERP/assets/112878767/8eedeb79-5104-461c-a25c-e7cfdab22cb6)
+>## Product Management
+
 
 

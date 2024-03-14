@@ -23,4 +23,6 @@ Before you begin, ensure you have met the following prerequisites:
 
 To install the ERP Frontend Application, follow these steps:
 * Clone the repository to your local machine using Git:
+  
 `git clone <repository-url>`
+

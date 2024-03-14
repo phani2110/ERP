@@ -42,4 +42,7 @@ To run the ERP Frontend Application, follow these steps:
 * Once the development server is up and running, open your web browser and navigate to `http://localhost:3000`.
 * You will be presented with the login page. If you're a new user, you can sign up for an account. If you already have an account, you can log in using your credentials.
 * Explore the application and use the intuitive interface to manage different aspects of your business operations.
+>## Landing Page
+![dashvoardmain](https://github.com/phani2110/ERP/assets/112878767/7754a433-6236-49f6-be21-e6d03db55edc)
+
 
